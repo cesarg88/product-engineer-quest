@@ -57,6 +57,29 @@ A milestone is complete when the expected deliverables exist and the completion 
 
 ---
 
+## Milestone Refinement Rule
+
+Only the current milestone should be fully detailed.
+
+Future milestones should remain lightweight until the current milestone is completed.
+
+At the end of each milestone, review:
+
+1. what was learned;
+2. what created friction;
+3. which concepts still feel weak;
+4. which exercises produced useful evidence;
+5. what should be changed before starting the next milestone.
+
+Then refine the next milestone before starting it.
+
+This protects the path from two opposite risks:
+
+- ambiguity: not knowing what to do next;
+- overplanning: spending too much time designing the system instead of learning.
+
+---
+
 ## Rule
 
 If the system starts to feel heavier than the learning, simplify the system.
