@@ -32,8 +32,46 @@ The goal is to learn through short, concrete milestones with fast feedback and v
 
 1. Product Thinking: understand user problems, hypotheses, metrics, MVPs, and prioritization.
 2. Business Thinking: understand how product and engineering decisions affect business outcomes.
-3. Leadership Without Authority: influence, communicate, and align across disciplines.
-4. AI-native Engineering: use AI to improve quality of thinking and decision-making.
+3. Product Execution: turn ambiguous product problems into scoped, reliable, and measurable delivery.
+4. Leadership Without Authority: influence, communicate, and align across disciplines.
+5. AI-native Engineering: use AI to improve quality of thinking and decision-making.
+
+---
+
+## Deliverable vs Evidence of Competence
+
+A deliverable is the artifact that must exist.
+
+Evidence of competence is what the artifact proves.
+
+Creating a file is not enough to demonstrate progress.
+
+For every exercise or milestone, distinguish:
+
+- Deliverable: the concrete artifact created.
+- Evidence of competence: the capability demonstrated by the artifact.
+
+Example:
+
+A product analysis deliverable is a Markdown file.
+
+The evidence of competence is whether the analysis distinguishes problem from solution, formulates a falsifiable hypothesis, chooses a useful metric, defines a minimum useful version, identifies trade-offs, and asks ambiguity-reducing questions.
+
+---
+
+## Qualitative Rubric
+
+Use only three levels:
+
+| Level | Meaning |
+| --- | --- |
+| Developing | The capability is present but incomplete, shallow, or still dependent on guidance. |
+| Competent | The capability is demonstrated clearly in this exercise. |
+| Independent | The capability is demonstrated clearly and could likely be applied without guidance in a new context. |
+
+The rubric applies to specific capabilities inside an exercise, not to a whole milestone in a generic way.
+
+Do not add numeric scores, XP, badges, or automation.
 
 ---
 
@@ -43,7 +81,7 @@ Progress is not based on time.
 
 Progress is based on evidence.
 
-A milestone is complete when the expected deliverables exist and the completion criteria are met.
+A milestone is complete when the expected deliverables exist and the evidence of competence meets the completion criteria.
 
 ---
 
@@ -53,7 +91,8 @@ A milestone is complete when the expected deliverables exist and the completion 
 2. Get fast feedback.
 3. Improve the output.
 4. Save the evidence.
-5. Move to the next exercise or milestone.
+5. Evaluate the relevant capabilities.
+6. Move to the next exercise or milestone.
 
 ---
 
@@ -77,6 +116,24 @@ This protects the path from two opposite risks:
 
 - ambiguity: not knowing what to do next;
 - overplanning: spending too much time designing the system instead of learning.
+
+---
+
+## Scope Control Rule
+
+After these lightweight learning-path changes, stop modifying the system structure and continue with the current exercises.
+
+Do not create yet:
+
+- website;
+- dashboard;
+- automation;
+- badges;
+- complex XP;
+- database;
+- new tools.
+
+The priority remains learning and producing evidence.
 
 ---
 
