@@ -2,7 +2,7 @@
 
 ## Objective
 
-Learn to analyze a feature from the perspective of user problems, hypotheses, metrics, MVPs, and trade-offs.
+Learn to analyze a feature from the perspective of user problems, hypotheses, metrics, MVPs, trade-offs, and risk metrics.
 
 This milestone should be self-contained. If you come back to this document after forgetting the conversation, it should tell you exactly what to read, what to watch, what to practice, what to produce, and when to move on.
 
@@ -17,12 +17,13 @@ Primary:
 Secondary:
 
 - Business Thinking
+- Product Execution
 
 ---
 
 ## Why This Matters
 
-A Product Engineer does not only ask how to build a feature. They also ask why it exists, who it serves, how success will be measured, and what trade-offs are involved.
+A Product Engineer does not only ask how to build a feature. They also ask why it exists, who it serves, how success will be measured, what could go wrong, and what trade-offs are involved.
 
 The goal of this milestone is to build the basic mental model required to look at any feature and reason about it as a product decision.
 
@@ -148,6 +149,20 @@ Example:
 
 > purchase_success with source favorites.
 
+### Risk Metric / Counter-metric
+
+A signal that tells us whether something is improving locally while the overall user or business outcome gets worse.
+
+Example:
+
+> Favorites added may increase while purchases do not improve.
+
+Other examples:
+
+- Lists may grow until they become less useful.
+- Notifications may increase return visits but also increase opt-outs or uninstalls.
+- Search usage may increase because discovery is broken elsewhere.
+
 ### Simplest Useful Version
 
 The smallest version that can validate the hypothesis.
@@ -184,7 +199,8 @@ For each feature analysis, follow this order:
 3. Send the rough version to ChatGPT for feedback.
 4. Improve the analysis.
 5. Save the final version in the repository.
-6. Move to the next feature.
+6. Evaluate the relevant capabilities using the qualitative rubric.
+7. Move to the next feature.
 
 Do not try to write a perfect first version.
 
@@ -211,14 +227,36 @@ Use this template for every feature:
 
 ## 4. Success Metric
 
-## 5. Simplest Useful Version
+## 5. Risk Metric / Counter-metric
 
-## 6. Trade-offs
+What could improve while the overall user or business outcome gets worse?
 
-## 7. Questions for PM / Design
+## 6. Simplest Useful Version
 
-## 8. Final Insight
+## 7. Trade-offs
+
+## 8. Questions for PM / Design
+
+## 9. Final Insight
+
+## 10. Evidence of Competence
+
+| Capability | Level | Notes |
+| --- | --- | --- |
+| Distinguish problem from solution |  |  |
+| Build a falsifiable product hypothesis |  |  |
+| Choose a metric linked to value |  |  |
+| Identify a useful risk metric / counter-metric |  |  |
+| Define the simplest useful version |  |  |
+| Identify relevant trade-offs |  |  |
+| Ask questions that reduce ambiguity |  |  |
 ```
+
+Allowed levels:
+
+- Developing
+- Competent
+- Independent
 
 ---
 
@@ -238,6 +276,14 @@ Deliverable:
 
 - `journal/product-analyses/01-fever-favorites.md`
 
+Evidence of competence:
+
+- Distinguishes the user problem from the solution.
+- Connects Favorites to delayed purchase intent, not only convenience.
+- Defines a metric linked to value, not only usage.
+- Identifies at least one risk metric or counter-metric.
+- Identifies product and execution trade-offs.
+
 ### Exercise 2 — Fever Search
 
 Status: next.
@@ -253,10 +299,19 @@ Questions to consider:
 - What happens when search returns no results?
 - Should success be measured by search usage, plan views, or purchases?
 - What is the difference between a good search result and a useful search experience?
+- What could improve locally while the overall experience gets worse?
 
 Deliverable:
 
 - `journal/product-analyses/02-fever-search.md`
+
+Evidence of competence:
+
+- Distinguishes search as retrieval from search as discovery.
+- Defines a hypothesis about user intent.
+- Chooses a value-linked success metric.
+- Identifies at least one counter-metric.
+- Identifies trade-offs around relevance, latency, zero-results, ranking, and scope.
 
 ### Exercise 3 — PickOne Watchlist
 
@@ -272,10 +327,19 @@ Questions to consider:
 - Is Watchlist about remembering, deciding, sharing, or reducing choice overload?
 - What metric would show that Watchlist creates value?
 - What is the simplest useful version for an MVP?
+- What could make Watchlist grow while user decision quality gets worse?
 
 Deliverable:
 
 - `journal/product-analyses/03-pickone-watchlist.md`
+
+Evidence of competence:
+
+- Defines the user problem without assuming the feature is automatically valuable.
+- Connects Watchlist to decision-making or reduced choice overload.
+- Chooses a success metric and a counter-metric.
+- Defines an MVP version that is small enough to build.
+- Identifies product and execution trade-offs.
 
 ---
 
@@ -301,11 +365,12 @@ Before Exercise 3:
 
 ## Feedback Loop
 
-Each analysis receives feedback in three parts:
+Each analysis receives feedback in four parts:
 
 1. What is well reasoned.
 2. What needs more depth.
-3. Improved version.
+3. Suggested capability levels.
+4. Improved version.
 
 The feedback should be immediate and practical.
 
@@ -319,9 +384,11 @@ This milestone is complete when:
 
 - 3 product analyses exist;
 - each analysis uses the template;
-- each analysis includes problem, user, hypothesis, metric, MVP, trade-offs, and questions;
+- each analysis includes problem, user, hypothesis, success metric, risk metric, MVP, trade-offs, and questions;
+- each analysis separates deliverable from evidence of competence;
 - the player can explain a feature without starting from implementation details;
-- the player can distinguish feature usage from feature value.
+- the player can distinguish feature usage from feature value;
+- the player can identify what might get worse even if a local metric improves.
 
 ---
 
